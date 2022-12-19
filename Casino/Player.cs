@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Guy
+public class Player
 {
 	public string Name;
 	public int Cash;
@@ -21,7 +21,7 @@ public class Guy
 	/// <returns>The amount of cash removed from the wallet.</returns>
 	public int GiveCash(int amount)
 	{
-		if (amount <= 0)
+		if (amount < 0)
 		{
 			Console.WriteLine(Name + " says: " + amount + " isn't a valid amount");
 			return 0;
